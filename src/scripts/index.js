@@ -78,11 +78,6 @@ class LoginForm {
         inputElement.classList.remove('invalid');
         errorElement.textContent = '';
     }
-
-    clearError(inputElement, errorElement) {
-        inputElement.classList.remove('invalid');
-        errorElement.textContent = '';
-    }
 }
 
 document.addEventListener('DOMContentLoaded', () => {
