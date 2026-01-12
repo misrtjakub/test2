@@ -6,9 +6,26 @@
     <title>Přihlášení do systému</title>
 </head>
 <body>
-    <main> 
-        
+    <main class="login-container"> 
+        <form class="login-form" id="loginForm" novalidate> 
+            <header class="login-header">
+                <h1 class="login-title">Přihlášení do systému</h1> 
+            </header>
+
+            <div class="input-group">
+                <label for="email">Email</label> 
+                <input type="email" id="email" name="email" placeholder="jannovak@gmail.com" required>
+                <span class="error-message" id="emailError"></span>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Heslo</label> 
+                <input type="password" id="password" name="password" placeholder="Zadejte heslo" required>
+                <span class="error-message" id="passwordError"></span>
+            </div>
+            <button type="submit" class="login-button">Přihlásit se</button>
+        </form>
     </main>
-    
+    <script src="src/scripts/index.js"></script>
 </body>
 </html>
